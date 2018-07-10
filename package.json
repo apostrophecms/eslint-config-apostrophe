@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-apostrophe",
+  "version": "2.0.0",
+  "description": "eslint configuration for apostrophe and related core modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apostrophecms/eslint-config-apostrophe.git"
+  },
+  "author": "P'unk Avenue LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apostrophecms/eslint-config-apostrophe/issues"
+  },
+  "homepage": "https://github.com/apostrophecms/eslint-config-apostrophe#readme"
+}
