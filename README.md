@@ -27,6 +27,8 @@ And here is the `.eslintrc` file you'll need:
 
 ## Changelog
 
+2.0.2: packaging issue, no changes.
+
 2.0.1: use `import/no-extraneous-dependencies` to detect `require` calls that are not backed by a real dependency of this project or module.
 
 2.0.0: initial release.
