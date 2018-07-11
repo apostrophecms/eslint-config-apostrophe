@@ -9,7 +9,8 @@ module.exports = {
     "standard/no-callback-literal": 0,
     "no-path-concat": 0,
     "no-throw-literal": 0,
-    "no-console": 1
+    "no-console": 1,
+    "import/no-extraneous-dependencies": 1
   },
   "overrides": [
     {
