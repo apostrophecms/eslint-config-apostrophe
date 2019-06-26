@@ -51,7 +51,7 @@ module.exports = {
       "files": ["*.js"],
       "excludedFiles": ["**/public/**/*.js"],
       "rules": {
-        "no-var": 1
+        "no-var": 0
       }
     }
   ]
