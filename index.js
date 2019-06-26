@@ -10,8 +10,7 @@ module.exports = {
     "no-path-concat": 0,
     "no-throw-literal": 0,
     "no-console": 1,
-    "import/no-extraneous-dependencies": 1,
-    "no-var": 1
+    "import/no-extraneous-dependencies": 1
   },
   "overrides": [
     {
@@ -46,6 +45,13 @@ module.exports = {
       },
       "rules": {
         "no-console": 0
+      }
+    },
+    {
+      "files": ["*.js"],
+      "excludedFiles": ["**/public/**/*.js"],
+      "rules": {
+        "no-var": 1
       }
     }
   ]
