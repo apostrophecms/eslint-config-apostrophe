@@ -1,7 +1,7 @@
 module.exports = {
   'extends': 'standard',
   "rules": {
-    'semi': ['error', 'always' ],
+    'semi': [ 'error', 'always' ],
     'no-unused-vars': ['error', { 'varsIgnorePattern': 'apos', 'args': 'none', 'ignoreRestSiblings': true }],
     "space-before-function-paren": 0,
     "padded-blocks": 0,
@@ -10,7 +10,8 @@ module.exports = {
     "no-path-concat": 0,
     "no-throw-literal": 0,
     "no-console": 1,
-    "import/no-extraneous-dependencies": 1
+    "import/no-extraneous-dependencies": 1,
+    "no-var": 1
   },
   "overrides": [
     {
