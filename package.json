@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-apostrophe",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "eslint configuration for apostrophe and related core modules",
   "main": "index.js",
   "scripts": {

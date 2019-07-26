@@ -1,7 +1,7 @@
 module.exports = {
   'extends': 'standard',
   "rules": {
-    'semi': ['error', 'always' ],
+    'semi': [ 'error', 'always' ],
     'no-unused-vars': ['error', { 'varsIgnorePattern': 'apos', 'args': 'none', 'ignoreRestSiblings': true }],
     "space-before-function-paren": 0,
     "padded-blocks": 0,
@@ -45,6 +45,13 @@ module.exports = {
       },
       "rules": {
         "no-console": 0
+      }
+    },
+    {
+      "files": ["*.js"],
+      "excludedFiles": ["**/public/**/*.js"],
+      "rules": {
+        "no-var": 0
       }
     }
   ]
