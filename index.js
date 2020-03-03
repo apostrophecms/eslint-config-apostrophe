@@ -1,6 +1,8 @@
 module.exports = {
   'extends': 'standard',
   "rules": {
+    "brace-style": ["warn", "1tbs"],
+    "curly": ["warn", "all"],
     'semi': [ 'error', 'always' ],
     'no-unused-vars': ['error', { 'varsIgnorePattern': 'apos', 'args': 'none', 'ignoreRestSiblings': true }],
     "space-before-function-paren": 0,
