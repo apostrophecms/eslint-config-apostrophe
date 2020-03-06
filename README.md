@@ -26,9 +26,10 @@ And here is the `.eslintrc` file you'll need:
 ```
 
 ## Changelog
+New major versions will be used whenever a new rule is added that returns an `error` on failure. This is to avoid breaking projects using this configuration as they do normal package updates. If a new rule is added that is simply set to `warn`, minor versions may be used since this should not break build, but only create warning messages for you to resolve or override with rules in your project configuration.
 
-2.0.2: packaging issue, no changes.
-
-2.0.1: use `import/no-extraneous-dependencies` to detect `require` calls that are not backed by a real dependency of this project or module.
-
-2.0.0: initial release.
+- 3.1.0: Adds a warning for the `curly` and `brace-style` rules to avoid single line blocks. Also `object-curly-newline` and `object-property-newline` rules to have similar treatment for objects. Adds the changelog versioning guidelines.
+- 3.0.0: Adds a warning for the `no-var` rule.
+- 2.0.2: packaging issue, no changes.
+- 2.0.1: use `import/no-extraneous-dependencies` to detect `require` calls that are not backed by a real dependency of this project or module.
+- 2.0.0: initial release.

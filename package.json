@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-apostrophe",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "eslint configuration for apostrophe and related core modules",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/apostrophecms/eslint-config-apostrophe.git"
   },
-  "author": "P'unk Avenue LLC",
+  "author": "Apostrophe Technologies, Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apostrophecms/eslint-config-apostrophe/issues"
