@@ -62,6 +62,11 @@ describe("eslint-config-apostrophe", function() {
       modified: ["warn", "1tbs"]
     });
 
+    expected.set("curly", {
+      standard: ["error", "multi-line"],
+      modified: ["warn", "all"]
+    });
+
     const actual = utils.diff(a, b);
     assert.deepEqual(expected, actual);
   });
