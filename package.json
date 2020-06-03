@@ -4,8 +4,10 @@
   "description": "eslint configuration for apostrophe and related core modules",
   "main": "index.js",
   "scripts": {
+    "check": "node ./lib/checkUpdates",
     "compare": "node ./lib/index",
-    "test": "npx mocha"
+    "test": "npx mocha",
+    "postinstall": "npm run check"
   },
   "repository": {
     "type": "git",
@@ -17,13 +19,17 @@
     "url": "https://github.com/apostrophecms/eslint-config-apostrophe/issues"
   },
   "homepage": "https://github.com/apostrophecms/eslint-config-apostrophe#readme",
+  "peerDependencies": {
+    "eslint": "^7.1.0"
+  },
+  "dependencies": {
+    "eslint-config-standard": ">=14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
   "devDependencies": {
-    "eslint": "^7.1.0",
-    "eslint-config-standard": "latest",
-    "eslint-plugin-import": "latest",
-    "eslint-plugin-node": "latest",
-    "eslint-plugin-promise": "latest",
-    "eslint-plugin-standard": "latest",
     "mocha": "^7.2.0"
   }
 }

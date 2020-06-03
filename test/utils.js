@@ -1,13 +1,7 @@
 const assert = require("assert");
-// const report = require("./lib");
 const utils = require("../lib/utils");
 
-describe("eslint-config-apostrophe", function() {
-  it("should pass a canary test", function() {
-    // eslint-disable-next-line
-    assert.equal(true, true);
-  });
-
+describe("eslint-config-apostrophe:utils", function() {
   it("should find missing rules", function() {
     const a = [1, 2, 3];
     const b = [3];
