@@ -40,7 +40,7 @@ module.exports = {
     'no-unused-vars': ['error', { 'varsIgnorePattern': 'apos', 'args': 'none', 'ignoreRestSiblings': true }],
     'space-before-function-paren': 0,
     'padded-blocks': 0,
-    'quotes': ['warning', 'single'],
+    'quotes': ['warn', 'single'],
     'standard/no-callback-literal': 0,
     'no-path-concat': 0,
     'no-throw-literal': 0,
