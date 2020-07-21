@@ -1,6 +1,11 @@
 module.exports = {
   'extends': 'standard',
   'rules': {
+    'array-bracket-spacing': [
+      1,
+      'always'
+    ],
+    'no-multi-spaces': 1,
     'brace-style': ['warn', '1tbs'],
     'curly': ['warn', 'all'],
     'object-curly-newline': ['warn', {
