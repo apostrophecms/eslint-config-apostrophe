@@ -10,6 +10,11 @@
     "sourceType": "module"
   },
   "rules": {
+    "array-bracket-spacing": [
+      1,
+      "always"
+    ],
+    "no-multi-spaces": 1,
     "brace-style": ["warn", "1tbs"],
     "curly": ["warn", "all"],
     "object-curly-newline": [
@@ -52,7 +57,7 @@
     ],
     "space-before-function-paren": 0,
     "padded-blocks": 0,
-    "quotes": 0,
+    "quotes":  ["warn", "single"],
     "standard/no-callback-literal": 0,
     "no-path-concat": 0,
     "no-throw-literal": 0,

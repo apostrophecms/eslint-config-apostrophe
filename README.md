@@ -41,6 +41,8 @@ All missing rules should be added to the `.eslintrc.json` with a definition even
 
 New major versions will be used whenever a new rule is added that returns an `error` on failure. This is to avoid breaking projects using this configuration as they do normal package updates. If a new rule is added that is simply set to `warn`, minor versions may be used since this should not break build, but only create warning messages for you to resolve or override with rules in your project configuration.
 
+- 3.3.0: Adds a warning enforcing a single space inside of array brackets.
+- 3.2.0: Adds a warning for the `quotes` rule to enforce single quotes. This should change to an error in the next major version.
 - 3.1.0: Adds a warning for the `curly` and `brace-style` rules to avoid single line blocks. Also `object-curly-newline` and `object-property-newline` rules to have similar treatment for objects. Adds the changelog versioning guidelines.
 - 3.0.0: Adds a warning for the `no-var` rule.
 - 2.0.2: packaging issue, no changes.
