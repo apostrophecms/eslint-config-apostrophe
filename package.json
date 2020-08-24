@@ -1,10 +1,13 @@
 {
   "name": "eslint-config-apostrophe",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "eslint configuration for apostrophe and related core modules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check": "node ./lib/checkUpdates",
+    "compare": "node ./lib/index",
+    "test": "npx mocha",
+    "postinstall": "npm run check"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/apostrophecms/eslint-config-apostrophe/issues"
   },
-  "homepage": "https://github.com/apostrophecms/eslint-config-apostrophe#readme"
+  "homepage": "https://github.com/apostrophecms/eslint-config-apostrophe#readme",
+  "peerDependencies": {
+    "eslint": "^7.1.0"
+  },
+  "dependencies": {
+    "eslint-config-standard": ">=14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^7.2.0"
+  }
 }
