@@ -8,12 +8,7 @@ Here is the necessary section of `package.json`:
 ```javascript
 "devDependencies": {
     "mocha": "^5.1.1",
-    "eslint": "^4.0.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint": "^4.0.0"
   }
 ```
 
@@ -41,6 +36,7 @@ All missing rules should be added to the `.eslintrc.json` with a definition even
 
 New major versions will be used whenever a new rule is added that returns an `error` on failure. This is to avoid breaking projects using this configuration as they do normal package updates. If a new rule is added that is simply set to `warn`, minor versions may be used since this should not break build, but only create warning messages for you to resolve or override with rules in your project configuration.
 
+- 3.4.1: Copies over missing eslint rules with the configurations from `eslint-config-standard`. There should be no functional changes in linting.
 - 3.4.0: Adds a script to check what rules from `eslint-config-standard` that we are not yet setting in this config. The goal of this is to make sure that any new rules we work with are intentional, rather than unexpectedly inherited from `eslint-config-standard`.
 - 3.3.0: Adds a warning enforcing a single space inside of array brackets.
 - 3.2.0: Adds a warning for the `quotes` rule to enforce single quotes. This should change to an error in the next major version.
