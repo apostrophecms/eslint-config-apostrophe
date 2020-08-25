@@ -1,24 +1,16 @@
-An eslint configuration for the apostrophe core modules.
+An ESLint configuration for ApostropheCMS core and officials modules.
 
-Due to limitations of eslint the dependencies of eslint plugins like this one
-must be explicitly loaded in your `package.json`.
-
-Here is the necessary section of `package.json`:
-
-```javascript
-"devDependencies": {
-    "mocha": "^5.1.1",
-    "eslint": "^4.0.0"
-  }
-```
-
-And here is the `.eslintrc` file you'll need:
+Add the following to your `.eslintrc` file to use in your project:
 
 ```javascript
 {
   "extends": "apostrophe"
 }
 ```
+
+## Contributing
+
+To contribute to this config or run tests, clone the repository and run `npm install`. You can then run `npm test` to run the basic tests.
 
 ## Viewing differences between the standard configuration and ours
 
