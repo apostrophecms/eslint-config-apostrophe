@@ -28,6 +28,7 @@ All missing rules should be added to the `.eslintrc.json` with a definition even
 
 New major versions will be used whenever a new rule is added that returns an `error` on failure. This is to avoid breaking projects using this configuration as they do normal package updates. If a new rule is added that is simply set to `warn`, minor versions may be used since this should not break build, but only create warning messages for you to resolve or override with rules in your project configuration.
 
+- 3.4.1 (2020-10-21): Updates `eslint-plugin-import`.
 - 3.4.0 (2020-08-26): Adds a script to check what rules from `eslint-config-standard` that we are not yet setting in this config. The goal of this is to make sure that any new rules we work with are intentional, rather than unexpectedly inherited from `eslint-config-standard`. Also copies over missing eslint rules with the configurations from `eslint-config-standard`. There should be no functional changes in linting.
 - 3.3.0: Adds a warning enforcing a single space inside of array brackets.
 - 3.2.0: Adds a warning for the `quotes` rule to enforce single quotes. This should change to an error in the next major version.
