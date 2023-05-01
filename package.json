@@ -1,12 +1,15 @@
 {
   "name": "eslint-config-apostrophe",
-  "version": "3.4.2",
+  "version": "4.0.0",
   "description": "eslint configuration for apostrophe and related core modules",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "check": "node ./lib/checkUpdates",
     "compare": "node ./lib/index",
-    "test": "npx mocha",
+    "test": "eslint . && npx mocha",
     "postinstall": "npm run check"
   },
   "repository": {
@@ -20,16 +23,15 @@
   },
   "homepage": "https://github.com/apostrophecms/eslint-config-apostrophe#readme",
   "peerDependencies": {
-    "eslint": "^7.1.0"
+    "eslint": ">= 8.39.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1"
   },
   "dependencies": {
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-config-standard": "^17.0.0"
   },
   "devDependencies": {
-    "mocha": "^7.2.0"
+    "mocha": "^10.2.0"
   }
 }
