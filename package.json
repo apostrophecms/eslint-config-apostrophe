@@ -9,7 +9,8 @@
   "scripts": {
     "check": "node ./lib/checkUpdates",
     "compare": "node ./lib/index",
-    "test": "eslint . && npx mocha",
+    "eslint": "eslint . -c eslintrc.json",
+    "test": "npx mocha",
     "postinstall": "npm run check"
   },
   "repository": {
