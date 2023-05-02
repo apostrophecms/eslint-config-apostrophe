@@ -4,7 +4,7 @@
   "description": "eslint configuration for apostrophe and related core modules",
   "main": "index.js",
   "engines": {
-    "node": ">=18"
+    "node": ">=16"
   },
   "scripts": {
     "check": "node ./lib/checkUpdates",
