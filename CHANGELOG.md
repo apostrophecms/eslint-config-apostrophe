@@ -1,6 +1,10 @@
-## Unreleased
+## 4.1.0 - 2023-08-03
 
-## [4.0.0] - 2023-06-21
+### Changed
+
+- Use latest eslint-config-standard
+
+## 4.0.0 - 2023-06-21
 
 ### Changed
 
