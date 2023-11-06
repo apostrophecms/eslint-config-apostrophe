@@ -157,6 +157,10 @@
         "exceptAfterSingleLine": true
       }
     ],
+    "max-len": [
+      "error",
+      90
+    ],
     "multiline-ternary": [
       "error",
       "always-multiline"
