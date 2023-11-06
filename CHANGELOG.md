@@ -1,6 +1,12 @@
+## UNRELEASED
+
+### Adds
+
+- Adds max-len rule
+
 ## 4.1.0 - 2023-08-03
 
-### Changed
+### Adds
 
 - Use latest eslint-config-standard
 
@@ -11,11 +17,11 @@
 - Upgraded dependencies
 - Swapped eslint-plugin-node for eslint-plugin-n which is what standard now uses
 
-### Added
+### Adds
 
 - Added missing rules no-var, object-shorthand, array-callback-return, default-case-last, multiline-ternary, no-useless-backreference, no-empty, no-import-assign, no-loss-of-precision, no-unreachable-loop, prefer-regex-literals, n/handle-callback-err, n/no-callback-literal, n/no-deprecated-api, n/no-exports-assign, n/no-new-require, n/no-path-concat, n/process-exit-as-throw
 
-### Fixed
+### Fixes
 
 - Fixed `compare` check which was returning some false positives
 
