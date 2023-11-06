@@ -159,7 +159,11 @@
     ],
     "max-len": [
       "error",
-      90
+      {
+        "code": 90,
+        "ignoreRegExpLiterals": true,
+        "ignoreUrls": true
+      }
     ],
     "multiline-ternary": [
       "error",
