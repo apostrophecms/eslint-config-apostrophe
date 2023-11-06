@@ -23,13 +23,12 @@
     "url": "https://github.com/apostrophecms/eslint-config-apostrophe/issues"
   },
   "homepage": "https://github.com/apostrophecms/eslint-config-apostrophe#readme",
-  "peerDependencies": {
+  "dependencies": {
     "eslint": ">= 8.39.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^16.0.0",
-    "eslint-plugin-promise": "^6.1.1"
-  },
-  "dependencies": {
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
     "eslint-config-standard": "^17.1.0"
   },
   "devDependencies": {
