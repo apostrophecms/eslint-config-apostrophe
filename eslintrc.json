@@ -157,6 +157,14 @@
         "exceptAfterSingleLine": true
       }
     ],
+    "max-len": [
+      "error",
+      {
+        "code": 90,
+        "ignoreRegExpLiterals": true,
+        "ignoreUrls": true
+      }
+    ],
     "multiline-ternary": [
       "error",
       "always-multiline"
