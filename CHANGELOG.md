@@ -1,3 +1,9 @@
+## Unreleased
+
+### Adds
+
+- Global macros for vue 3.
+
 ## 4.2.1 (2024-01-10)
 
 ### Fixes
