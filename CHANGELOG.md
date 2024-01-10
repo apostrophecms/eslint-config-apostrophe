@@ -1,3 +1,12 @@
+## 4.2.1 (2024-01-10)
+
+### Fixes
+
+- Removed logic to automatically detect out of date eslint plugins.
+Unfortunately this is [not safe in current Node.js if any of those
+plugins use the `exports` feature in `package.json`](https://github.com/nodejs/node/issues/33460),
+which led to install failures for a related module.
+
 ## 4.2.0 (2023-11-29)
 
 ### Adds
