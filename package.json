@@ -1,17 +1,15 @@
 {
   "name": "eslint-config-apostrophe",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "eslint configuration for apostrophe and related core modules",
   "main": "index.js",
   "engines": {
     "node": ">=16"
   },
   "scripts": {
-    "check": "node ./lib/checkUpdates",
     "compare": "node ./lib/index",
     "eslint": "eslint . -c eslintrc.json",
-    "test": "npx mocha",
-    "postinstall": "npm run check"
+    "test": "npx mocha"
   },
   "repository": {
     "type": "git",
