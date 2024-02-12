@@ -2,9 +2,6 @@
   "extends": [
     "standard"
   ],
-  "globals": {
-    "apos": true
-  },
   "rules": {
     "no-var": "error",
     "object-shorthand": [
@@ -564,6 +561,7 @@
     {
       "files": "*.vue",
       "globals": {
+        "apos": true,
         "defineProps": "readable",
         "defineEmits": "readable",
         "defineExpose": "readable",
