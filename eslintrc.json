@@ -2,6 +2,9 @@
   "extends": [
     "standard"
   ],
+  "globals": {
+    "apos": true
+  },
   "rules": {
     "no-var": "error",
     "object-shorthand": [
@@ -158,10 +161,12 @@
       }
     ],
     "max-len": [
-      "error",
+      "warn",
       {
         "code": 90,
         "ignoreRegExpLiterals": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreStrings": true,
         "ignoreUrls": true
       }
     ],
