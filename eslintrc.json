@@ -158,10 +158,12 @@
       }
     ],
     "max-len": [
-      "error",
+      "warn",
       {
         "code": 90,
         "ignoreRegExpLiterals": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreStrings": true,
         "ignoreUrls": true
       }
     ],
@@ -559,6 +561,7 @@
     {
       "files": "*.vue",
       "globals": {
+        "apos": true,
         "defineProps": "readable",
         "defineEmits": "readable",
         "defineExpose": "readable",

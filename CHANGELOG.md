@@ -4,6 +4,10 @@
 
 - Global macros for vue 3.
 
+### Changes
+
+- Makes max-len a warning, updates its options.
+
 ## 4.2.1 (2024-01-10)
 
 ### Fixes
@@ -27,7 +31,7 @@ which led to install failures for a related module.
 
 ## 4.0.0 - 2023-06-21
 
-### Changed
+### Changes
 
 - Upgraded dependencies
 - Swapped eslint-plugin-node for eslint-plugin-n which is what standard now uses
