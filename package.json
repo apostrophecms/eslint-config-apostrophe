@@ -21,8 +21,8 @@
     "url": "https://github.com/apostrophecms/eslint-config-apostrophe/issues"
   },
   "homepage": "https://github.com/apostrophecms/eslint-config-apostrophe#readme",
-  "peerDependencies": {
-    "eslint": ">= 8.53.0",
+  "dependencies": {
+    "eslint": "^8.53.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-n": "^16.2.0",
