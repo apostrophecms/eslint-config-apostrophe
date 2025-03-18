@@ -572,7 +572,7 @@
     },
     {
       "files": [
-        "**/ui/src/**/*.js"
+        "**/ui/**/*.js"
       ],
       "env": {
         "browser": true
@@ -592,6 +592,9 @@
         "test/**/*.js",
         "**/*.cy.js"
       ],
+      "globals": {
+        "apos": "readonly"
+      },
       "env": {
         "mocha": true
       }
