@@ -336,7 +336,7 @@
     "no-unused-vars": [
       "error",
       {
-        "varsIgnorePattern": "apos",
+        "varsIgnorePattern": "^_",
         "args": "none",
         "ignoreRestSiblings": true
       }
@@ -561,13 +561,19 @@
     {
       "files": "*.vue",
       "globals": {
-        "apos": true,
-        "defineProps": "readable",
-        "defineEmits": "readable",
-        "defineExpose": "readable",
-        "defineOptions": "readable",
-        "defineModel": "readable",
-        "defineSlots": "readable"
+        "apos": "readonly",
+        "defineProps": "readonly",
+        "defineEmits": "readonly",
+        "defineExpose": "readonly",
+        "defineOptions": "readonly",
+        "defineModel": "readonly",
+        "defineSlots": "readonly",
+        "location": "readonly",
+        "history": "readonly",
+        "sessionStorage": "readonly",
+        "localStorage": "readonly",
+        "IntersectionObserver": "readonly",
+        "Image": "readonly"
       }
     },
     {
@@ -578,10 +584,16 @@
         "browser": true
       },
       "globals": {
+        "apos": "readonly",
         "document": "readonly",
         "navigator": "readonly",
         "window": "readonly",
-        "apos": "readonly"
+        "location": "readonly",
+        "history": "readonly",
+        "sessionStorage": "readonly",
+        "localStorage": "readonly",
+        "IntersectionObserver": "readonly",
+        "Image": "readonly"
       },
       "rules": {
         "no-console": "error"
@@ -593,10 +605,13 @@
         "**/*.cy.js"
       ],
       "globals": {
-        "apos": "readonly"
+        "apos": "writable"
       },
       "env": {
         "mocha": true
+      },
+      "rules": {
+        "no-console": "off"
       }
     }
   ]
