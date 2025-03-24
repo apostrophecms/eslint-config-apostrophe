@@ -573,7 +573,11 @@
         "sessionStorage": "readonly",
         "localStorage": "readonly",
         "IntersectionObserver": "readonly",
-        "Image": "readonly"
+        "Image": "readonly",
+        "Node": "readonly",
+        "ResizeObserver": "readonly",
+        "addEventListener": "readonly",
+        "removeEventListener": "readonly"
       }
     },
     {
@@ -593,7 +597,11 @@
         "sessionStorage": "readonly",
         "localStorage": "readonly",
         "IntersectionObserver": "readonly",
-        "Image": "readonly"
+        "Image": "readonly",
+        "Node": "readonly",
+        "ResizeObserver": "readonly",
+        "addEventListener": "readonly",
+        "removeEventListener": "readonly"
       },
       "rules": {
         "no-console": "error"
