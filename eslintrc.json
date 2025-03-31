@@ -1,6 +1,7 @@
 {
   "extends": [
-    "standard"
+    "standard",
+    "plugin:vue/recommended"
   ],
   "rules": {
     "no-var": "error",
@@ -559,49 +560,15 @@
   ],
   "overrides": [
     {
-      "files": "*.vue",
-      "globals": {
-        "apos": "readonly",
-        "defineProps": "readonly",
-        "defineEmits": "readonly",
-        "defineExpose": "readonly",
-        "defineOptions": "readonly",
-        "defineModel": "readonly",
-        "defineSlots": "readonly",
-        "location": "readonly",
-        "history": "readonly",
-        "sessionStorage": "readonly",
-        "localStorage": "readonly",
-        "IntersectionObserver": "readonly",
-        "Image": "readonly",
-        "Node": "readonly",
-        "ResizeObserver": "readonly",
-        "addEventListener": "readonly",
-        "removeEventListener": "readonly"
-      }
-    },
-    {
       "files": [
-        "**/ui/**/*.js"
+        "**/ui/**/*.js",
+        "*.vue"
       ],
       "env": {
         "browser": true
       },
       "globals": {
-        "apos": "readonly",
-        "document": "readonly",
-        "navigator": "readonly",
-        "window": "readonly",
-        "location": "readonly",
-        "history": "readonly",
-        "sessionStorage": "readonly",
-        "localStorage": "readonly",
-        "IntersectionObserver": "readonly",
-        "Image": "readonly",
-        "Node": "readonly",
-        "ResizeObserver": "readonly",
-        "addEventListener": "readonly",
-        "removeEventListener": "readonly"
+        "apos": "readonly"
       },
       "rules": {
         "no-console": "error"
@@ -612,14 +579,11 @@
         "test/**/*.js",
         "**/*.cy.js"
       ],
-      "globals": {
-        "apos": "writable"
-      },
       "env": {
         "mocha": true
       },
       "rules": {
-        "no-console": "off"
+        "no-console": "error"
       }
     }
   ]
