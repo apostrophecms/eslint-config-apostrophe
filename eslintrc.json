@@ -1,6 +1,7 @@
 {
   "extends": [
-    "standard"
+    "standard",
+    "plugin:vue/recommended"
   ],
   "rules": {
     "no-var": "error",
@@ -336,7 +337,7 @@
     "no-unused-vars": [
       "error",
       {
-        "varsIgnorePattern": "apos",
+        "varsIgnorePattern": "^_[^_].*$|^_$",
         "args": "none",
         "ignoreRestSiblings": true
       }
@@ -559,28 +560,14 @@
   ],
   "overrides": [
     {
-      "files": "*.vue",
-      "globals": {
-        "apos": true,
-        "defineProps": "readable",
-        "defineEmits": "readable",
-        "defineExpose": "readable",
-        "defineOptions": "readable",
-        "defineModel": "readable",
-        "defineSlots": "readable"
-      }
-    },
-    {
       "files": [
-        "**/ui/src/**/*.js"
+        "**/ui/**/*.js",
+        "*.vue"
       ],
       "env": {
         "browser": true
       },
       "globals": {
-        "document": "readonly",
-        "navigator": "readonly",
-        "window": "readonly",
         "apos": "readonly"
       },
       "rules": {
@@ -594,6 +581,9 @@
       ],
       "env": {
         "mocha": true
+      },
+      "rules": {
+        "no-console": "error"
       }
     }
   ]
