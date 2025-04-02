@@ -1,3 +1,15 @@
+
+## 5.0.0 (2024-03-31)
+
+### Adds
+
+- Adds `eslint-plugin-vue` to the dependencies.
+
+### Changes
+
+- No console in tests.
+- Same config for frontend js and vue.
+
 ## 4.3.0 (2024-02-14)
 
 ### Adds
