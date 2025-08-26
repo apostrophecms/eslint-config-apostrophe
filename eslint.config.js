@@ -1,16 +1,15 @@
-import { defineConfig, globalIgnores } from 'eslint/config';
-import { FlatCompat } from '@eslint/eslintrc';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import pluginVue from 'eslint-plugin-vue'
-
-const compat = new FlatCompat();
+import neostandard from "neostandard";
 
 export default defineConfig([
-  globalIgnores([ '**/public', '**/ui/public/**/*.js' ]),
-  ...compat.extends('eslint-config-standard'),
+  {
+    ignores: ["public", "**/ui/public/**/*.js"],
+  },
+  ...neostandard(),
   ...pluginVue.configs['flat/recommended'],
   {
-    extends: compat.extends('standard', 'plugin:vue/recommended'),
     rules: {
       'no-var': 'error',
       'object-shorthand': [ 'warn', 'properties' ],
