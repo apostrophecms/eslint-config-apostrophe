@@ -1,13 +1,16 @@
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import pluginVue from 'eslint-plugin-vue'
-import neostandard from "neostandard";
+import neostandard, { plugins } from "neostandard";
 
 export default defineConfig([
   {
     ignores: ["public", "**/ui/public/**/*.js"],
   },
   ...neostandard(),
+  plugins['import-x'].configs['flat/recommended'],
+  plugins.n.configs['flat/recommended'],
+  plugins.promise.configs['flat/recommended'],
   ...pluginVue.configs['flat/recommended'],
   {
     rules: {
@@ -431,9 +434,9 @@ export default defineConfig([
       ],
       'yield-star-spacing': [ 'error', 'both' ],
       yoda: [ 'error', 'never' ],
-      'import/export': 'error',
-      'import/first': 'error',
-      'import/no-absolute-path': [
+      'import-x/export': 'error',
+      'import-x/first': 'error',
+      'import-x/no-absolute-path': [
         'error',
         {
           esmodule: true,
@@ -441,9 +444,9 @@ export default defineConfig([
           amd: false
         }
       ],
-      'import/no-duplicates': 'error',
-      'import/no-named-default': 'error',
-      'import/no-webpack-loader-syntax': 'error',
+      'import-x/no-duplicates': 'error',
+      'import-x/no-named-default': 'error',
+      'import-x/no-webpack-loader-syntax': 'error',
       'n/handle-callback-err': [ 'error', '^(err|error)$' ],
       'n/no-callback-literal': 'off',
       'n/no-deprecated-api': 'error',
