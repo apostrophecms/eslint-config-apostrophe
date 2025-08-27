@@ -1,7 +1,7 @@
-import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import pluginVue from 'eslint-plugin-vue'
 import neostandard, { plugins } from "neostandard";
+import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
   globalIgnores([
