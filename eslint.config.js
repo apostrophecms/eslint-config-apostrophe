@@ -1,6 +1,6 @@
 import globals from 'globals';
 import pluginVue from 'eslint-plugin-vue';
-import neostandard, { plugins } from 'neostandard';
+import neostandard from 'neostandard';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
@@ -14,60 +14,146 @@ export default defineConfig([
     rules: {
       'no-var': 'error',
       'object-shorthand': [ 'warn', 'properties' ],
-      'accessor-pairs': [
-        'error',
-        {
-          setWithoutGet: true,
-          enforceForClassMembers: true
-        }
-      ],
-      'array-callback-return': [
-        'error',
-        {
-          allowImplicit: false,
-          checkForEach: false
-        }
-      ],
+      'accessor-pairs': [ 'error', {
+        setWithoutGet: true,
+        enforceForClassMembers: true
+      } ],
+      'array-callback-return': [ 'error', {
+        allowImplicit: false,
+        checkForEach: false
+      } ],
       'constructor-super': 'error',
       curly: [ 'warn', 'all' ],
       'default-case-last': 'error',
-      'dot-notation': [
-        'error',
-        {
-          allowKeywords: true
-        }
-      ],
-      eqeqeq: [
-        'error',
-        'always',
-        {
-          null: 'ignore'
-        }
-      ],
+      'dot-notation': [ 'error', { allowKeywords: true } ],
+      eqeqeq: [ 'error', 'always', { null: 'ignore' } ],
       'func-call-spacing': [ 'error', 'never' ],
-      'new-cap': [
-        'error',
-        {
-          newIsCap: true,
-          capIsNew: false,
-          properties: true
-        }
-      ],
+      'new-cap': [ 'error', {
+        newIsCap: true,
+        capIsNew: false,
+        properties: true
+      } ],
       'no-array-constructor': 'error',
+      'no-async-promise-executor': 'error',
+      'no-caller': 'error',
+      'no-case-declarations': 'error',
+      'no-class-assign': 'error',
+      'no-compare-neg-zero': 'error',
+      'no-cond-assign': 'error',
+      'no-const-assign': 'error',
+      'no-constant-condition': [ 'error', { checkLoops: false } ],
+      'no-control-regex': 'error',
+      'no-debugger': 'error',
+      'no-delete-var': 'error',
+      'no-dupe-args': 'error',
+      'no-dupe-class-members': 'error',
+      'no-dupe-keys': 'error',
+      'no-duplicate-case': 'error',
+      'no-useless-backreference': 'error',
+      'no-empty': [ 'error', { allowEmptyCatch: true } ],
+      'no-empty-character-class': 'error',
+      'no-empty-pattern': 'error',
+      'no-eval': 'error',
+      'no-ex-assign': 'error',
+      'no-extend-native': 'error',
+      'no-extra-bind': 'error',
+      'no-extra-boolean-cast': 'error',
+      'no-fallthrough': 'error',
+      'no-func-assign': 'error',
+      'no-global-assign': 'error',
+      'no-implied-eval': 'error',
+      'no-import-assign': 'error',
+      'no-invalid-regexp': 'error',
+      'no-irregular-whitespace': 'error',
+      'no-iterator': 'error',
+      'no-labels': [ 'error', {
+        allowLoop: false,
+        allowSwitch: false
+      } ],
+      'no-lone-blocks': 'error',
+      'no-loss-of-precision': 'error',
+      'no-misleading-character-class': 'error',
+      'no-prototype-builtins': 'error',
+      'no-useless-catch': 'error',
+      'no-mixed-operators': [ 'error', {
+        groups: [ [ '==', '!=', '===', '!==', '>', '>=', '<', '<=' ], [ '&&', '||' ], [ 'in', 'instanceof' ] ],
+        allowSamePrecedence: true
+      } ],
+      'no-multi-str': 'error',
+      'no-new': 'error',
+      'no-new-func': 'error',
+      'no-new-object': 'error',
+      'no-new-symbol': 'error',
+      'no-new-wrappers': 'error',
+      'no-obj-calls': 'error',
+      'no-octal': 'error',
+      'no-octal-escape': 'error',
+      'no-proto': 'error',
+      'no-redeclare': [ 'error', { builtinGlobals: false } ],
+      'no-regex-spaces': 'error',
+      'no-return-assign': [ 'error', 'except-parens' ],
+      'no-self-assign': [ 'error', { props: true } ],
+      'no-self-compare': 'error',
+      'no-sequences': 'error',
+      'no-shadow-restricted-names': 'error',
+      'no-sparse-arrays': 'error',
+      'no-template-curly-in-string': 'error',
+      'no-this-before-super': 'error',
+      'no-throw-literal': 'off',
+      'no-undef': 'error',
+      'no-undef-init': 'error',
+      'no-unexpected-multiline': 'error',
+      'no-unmodified-loop-condition': 'error',
+      'no-unneeded-ternary': [ 'error', { defaultAssignment: false } ],
+      'no-unreachable': 'error',
+      'no-unreachable-loop': 'error',
+      'no-unsafe-finally': 'error',
+      'no-unsafe-negation': 'error',
+      'no-unused-expressions': [ 'error', {
+        allowShortCircuit: true,
+        allowTernary: true,
+        allowTaggedTemplates: true
+      } ],
+      'no-unused-vars': [ 'error', {
+        varsIgnorePattern: '^_[^_].*$|^_$',
+        args: 'none',
+        ignoreRestSiblings: true
+      } ],
+      'no-use-before-define': [ 'error', {
+        functions: false,
+        classes: false,
+        variables: false
+      } ],
+      'no-useless-call': 'error',
+      'no-useless-computed-key': 'error',
+      'no-useless-constructor': 'error',
+      'no-useless-escape': 'error',
+      'no-useless-rename': 'error',
+      'no-useless-return': 'error',
+      'no-void': 'error',
+      'no-with': 'error',
+      'object-property-newline': [ 'warn', { allowAllPropertiesOnSameLine: false } ],
+      'one-var': [ 'error', { initialized: 'never' } ],
+      'prefer-const': [ 'error', { destructuring: 'all' } ],
+      'prefer-promise-reject-errors': 'error',
+      'prefer-regex-literals': [ 'error', { disallowRedundantWrapping: true } ],
+      'symbol-description': 'error',
+      'unicode-bom': [ 'error', 'never' ],
+      'use-isnan': 'error',
+      'valid-typeof': [ 'error', { requireStringLiterals: true } ],
       yoda: [ 'error', 'never' ],
+
       'import-x/export': 'error',
       'import-x/first': 'error',
-      'import-x/no-absolute-path': [
-        'error',
-        {
-          esmodule: true,
-          commonjs: true,
-          amd: false
-        }
-      ],
+      'import-x/no-absolute-path': [ 'error', {
+        esmodule: true,
+        commonjs: true,
+        amd: false
+      } ],
       'import-x/no-duplicates': 'error',
       'import-x/no-named-default': 'error',
       'import-x/no-webpack-loader-syntax': 'error',
+
       'n/handle-callback-err': [ 'error', '^(err|error)$' ],
       'n/no-callback-literal': 'off',
       'n/no-deprecated-api': 'error',
@@ -75,9 +161,9 @@ export default defineConfig([
       'n/no-new-require': 'error',
       'n/no-path-concat': 'off',
       'n/process-exit-as-throw': 'error',
+
       'promise/param-names': 'error',
 
-      // Stylistic rules moved to the end and prefixed
       '@stylistic/array-bracket-spacing': [ 'warn', 'always' ],
       '@stylistic/arrow-spacing': [ 'error', {
         before: true,
@@ -158,6 +244,7 @@ export default defineConfig([
           '|>': 'before'
         }
       } ],
+      '@stylistic/padded-blocks': 'off',
       '@stylistic/quote-props': [ 'error', 'as-needed' ],
       '@stylistic/quotes': [ 'warn', 'single' ],
       '@stylistic/rest-spread-spacing': [ 'error', 'never' ],
@@ -167,6 +254,7 @@ export default defineConfig([
         after: true
       } ],
       '@stylistic/space-before-blocks': [ 'error', 'always' ],
+      '@stylistic/space-before-function-paren': 'off',
       '@stylistic/space-in-parens': [ 'error', 'never' ],
       '@stylistic/space-infix-ops': 'error',
       '@stylistic/space-unary-ops': [ 'error', {
