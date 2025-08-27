@@ -117,7 +117,8 @@ export default defineConfig([
       'no-unused-vars': [ 'error', {
         varsIgnorePattern: '^_[^_].*$|^_$',
         args: 'none',
-        ignoreRestSiblings: true
+        ignoreRestSiblings: true,
+        caughtErrors: 'none'
       } ],
       'no-use-before-define': [ 'error', {
         functions: false,
