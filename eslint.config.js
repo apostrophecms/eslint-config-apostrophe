@@ -1,12 +1,13 @@
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import pluginVue from 'eslint-plugin-vue'
 import neostandard, { plugins } from "neostandard";
 
 export default defineConfig([
-  {
-    ignores: ["public", "**/ui/public/**/*.js"],
-  },
+  globalIgnores([
+    "public",
+    "**/ui/public/**/*.js"
+  ]),
   ...neostandard(),
   plugins['import-x'].configs['flat/recommended'],
   plugins.n.configs['flat/recommended'],
