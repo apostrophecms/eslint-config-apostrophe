@@ -5,8 +5,11 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
   globalIgnores([
-    'public',
-    '**/ui/public/**/*.js'
+    '**/node_modules',
+    '**/ui/public/**/*.js',
+    '/apos-build',
+    '/data',
+    'public'
   ]),
   ...neostandard(),
   ...pluginVue.configs['flat/recommended'],
@@ -305,16 +308,7 @@ export default defineConfig([
       '@stylistic/template-curly-spacing': [ 'error', 'never' ],
       '@stylistic/template-tag-spacing': [ 'error', 'never' ],
       '@stylistic/wrap-iife': [ 'error', 'any', { functionPrototypeMethods: true } ],
-      '@stylistic/yield-star-spacing': [ 'error', 'both' ],
-      'vue/max-len': [ 'warn', {
-        code: 90,
-        ignoreRegExpLiterals: true,
-        ignoreTemplateLiterals: true,
-        ignoreStrings: true,
-        ignoreUrls: true,
-        ignoreHTMLAttributeValues: true,
-        ignoreHTMLTextContents: true
-      } ]
+      '@stylistic/yield-star-spacing': [ 'error', 'both' ]
     }
   },
   {
