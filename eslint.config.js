@@ -22,6 +22,7 @@ export default defineConfig([
         allowImplicit: false,
         checkForEach: false
       } ],
+      camelcase: [ 'error', { properties: 'never' } ],
       'constructor-super': 'error',
       curly: [ 'warn', 'all' ],
       'default-case-last': 'error',
