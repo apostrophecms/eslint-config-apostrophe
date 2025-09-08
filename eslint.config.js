@@ -7,8 +7,8 @@ export default defineConfig([
   globalIgnores([
     '**/node_modules',
     '**/ui/public/**/*.js',
-    '/apos-build',
-    '/data',
+    'apos-build',
+    'data',
     'public'
   ]),
   ...neostandard(),
