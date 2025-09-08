@@ -14,6 +14,14 @@ export default defineConfig([
   ...neostandard(),
   ...pluginVue.configs['flat/recommended'],
   {
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module'
+      }
+    }
+  },
+  {
     rules: {
       'no-var': 'error',
       'object-shorthand': [ 'warn', 'properties' ],
