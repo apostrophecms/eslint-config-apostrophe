@@ -225,6 +225,14 @@ export default defineConfig([
         after: true
       } ],
       '@stylistic/lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: true } ],
+      '@stylistic/max-len': [ 'warn', {
+        code: 90,
+        ignoreRegExpLiterals: true,
+        ignoreTemplateLiterals: true,
+        ignoreStrings: true,
+        ignoreUrls: true,
+        ignorePattern: '\\w=".*"' // ignore HTML attributes for vue files
+      } ],
       '@stylistic/multiline-ternary': [ 'error', 'always-multiline' ],
       '@stylistic/new-parens': 'error',
       '@stylistic/no-extra-parens': [ 'error', 'functions' ],
@@ -273,7 +281,16 @@ export default defineConfig([
       '@stylistic/template-curly-spacing': [ 'error', 'never' ],
       '@stylistic/template-tag-spacing': [ 'error', 'never' ],
       '@stylistic/wrap-iife': [ 'error', 'any', { functionPrototypeMethods: true } ],
-      '@stylistic/yield-star-spacing': [ 'error', 'both' ]
+      '@stylistic/yield-star-spacing': [ 'error', 'both' ],
+      'vue/max-len': [ 'warn', {
+        code: 90,
+        ignoreRegExpLiterals: true,
+        ignoreTemplateLiterals: true,
+        ignoreStrings: true,
+        ignoreUrls: true,
+        ignoreHTMLAttributeValues: true,
+        ignoreHTMLTextContents: true
+      } ]
     }
   },
   {
