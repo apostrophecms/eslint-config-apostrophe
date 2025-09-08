@@ -238,6 +238,7 @@ export default defineConfig([
       '@stylistic/new-parens': 'error',
       '@stylistic/no-extra-parens': [ 'error', 'functions' ],
       '@stylistic/no-floating-decimal': 'error',
+      '@stylistic/no-mixed-spaces-and-tabs': 'error',
       '@stylistic/no-multi-spaces': 'error',
       '@stylistic/no-multiple-empty-lines': [ 'error', {
         max: 1,
