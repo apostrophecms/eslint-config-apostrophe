@@ -247,6 +247,28 @@ export default defineConfig([
       '@stylistic/no-tabs': 'error',
       '@stylistic/no-trailing-spaces': 'error',
       '@stylistic/no-whitespace-before-property': 'error',
+      '@stylistic/object-curly-newline': [ 'warn', {
+        ObjectExpression: {
+          minProperties: 2,
+          consistent: true,
+          multiline: true
+        },
+        ObjectPattern: {
+          minProperties: 3,
+          consistent: true,
+          multiline: true
+        },
+        ImportDeclaration: {
+          minProperties: 3,
+          consistent: true,
+          multiline: true
+        },
+        ExportDeclaration: {
+          minProperties: 3,
+          consistent: true,
+          multiline: true
+        }
+      } ],
       '@stylistic/object-curly-spacing': [ 'error', 'always' ],
       '@stylistic/operator-linebreak': [ 'error', 'after', {
         overrides: {
