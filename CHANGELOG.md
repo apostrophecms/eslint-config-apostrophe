@@ -1,3 +1,9 @@
+## 6.0.1 (2025-09-09)
+
+### Fixes
+
+- Apply `vue/max-len` rule to vue files only.
+
 ## 6.0.0 (2025-09-09)
 
 ### Breaking changes
