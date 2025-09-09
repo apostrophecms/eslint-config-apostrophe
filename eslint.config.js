@@ -309,6 +309,7 @@ export default defineConfig([
       '@stylistic/template-tag-spacing': [ 'error', 'never' ],
       '@stylistic/wrap-iife': [ 'error', 'any', { functionPrototypeMethods: true } ],
       '@stylistic/yield-star-spacing': [ 'error', 'both' ],
+
       'vue/max-len': [ 'warn', {
         code: 90,
         ignoreRegExpLiterals: true,
