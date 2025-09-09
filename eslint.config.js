@@ -308,17 +308,7 @@ export default defineConfig([
       '@stylistic/template-curly-spacing': [ 'error', 'never' ],
       '@stylistic/template-tag-spacing': [ 'error', 'never' ],
       '@stylistic/wrap-iife': [ 'error', 'any', { functionPrototypeMethods: true } ],
-      '@stylistic/yield-star-spacing': [ 'error', 'both' ],
-
-      'vue/max-len': [ 'warn', {
-        code: 90,
-        ignoreRegExpLiterals: true,
-        ignoreTemplateLiterals: true,
-        ignoreStrings: true,
-        ignoreUrls: true,
-        ignoreHTMLAttributeValues: true,
-        ignoreHTMLTextContents: true
-      } ]
+      '@stylistic/yield-star-spacing': [ 'error', 'both' ]
     }
   },
   {
@@ -331,6 +321,20 @@ export default defineConfig([
         ignoreTemplateLiterals: true,
         ignoreStrings: true,
         ignoreUrls: true
+      } ]
+    }
+  },
+  {
+    files: [ '**/*.vue' ],
+    rules: {
+      'vue/max-len': [ 'warn', {
+        code: 90,
+        ignoreRegExpLiterals: true,
+        ignoreTemplateLiterals: true,
+        ignoreStrings: true,
+        ignoreUrls: true,
+        ignoreHTMLAttributeValues: true,
+        ignoreHTMLTextContents: true
       } ]
     }
   },
