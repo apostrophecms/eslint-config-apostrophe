@@ -1,3 +1,8 @@
+## UNRELEASED
+
+### Breaking changes
+
+- Migration to `eslint@9` and `neostandard`.
 
 ## 5.0.0 (2024-03-31)
 
