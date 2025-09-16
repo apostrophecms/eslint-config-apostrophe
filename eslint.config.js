@@ -7,9 +7,9 @@ export default defineConfig([
   globalIgnores([
     '**/node_modules',
     '**/ui/public/**/*.js',
-    'apos-build',
-    'data',
-    'public'
+    '**/apos-build',
+    '**/data',
+    '**/public'
   ]),
   ...neostandard(),
   ...pluginVue.configs['flat/recommended'],

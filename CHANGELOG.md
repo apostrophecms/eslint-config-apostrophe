@@ -1,3 +1,9 @@
+## 6.0.2 (2025-09-16)
+
+### Fixes
+
+- Ignore `apos-build`, `data` and `public` directories recursively.
+
 ## 6.0.1 (2025-09-09)
 
 ### Fixes
